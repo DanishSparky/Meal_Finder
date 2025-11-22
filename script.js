@@ -1,3 +1,17 @@
+const menuBtn = document.getElementById("navLogo");
+const closeBtn = document.getElementById("close-btn");
+const sidebar = document.getElementById("sidebar");
+
+menuBtn.addEventListener("click", () => {
+    sidebar.style.right = "0px";
+});
+
+closeBtn.addEventListener("click", () => {
+    sidebar.style.right = "-350px";
+});
+
+
+
 async function fetchItems(){
     const response = await fetch("https://www.themealdb.com/api/json/v1/1/categories.php")
     const data = await response.json()
@@ -18,4 +32,8 @@ function displayItems(meals){
         category.insertAdjacentHTML("beforeend", meal)
     })
 }
+
+
+
+
 
