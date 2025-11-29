@@ -25,7 +25,7 @@ function displayMeals(products){
     </div>
     `
     let titleMeal =`
-    <h1>MEALS</h1>
+    <h1 class="mealHeading">MEALS</h1>
     <div class="orangeLine"></div>
     `
     let cateData = ""

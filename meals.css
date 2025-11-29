@@ -3,10 +3,6 @@
     margin: 0;
 }
 
-body{
-     background-color: #F5F5F5;
-}
-
 header{
     position: sticky;
     top: 0;
@@ -152,4 +148,79 @@ header{
     left: 38vw;
     font-size: 1.4vw;
     font-weight: 100;
+}
+
+/*Description*/
+
+.descritpionBox{
+    background-color: #FAFAFA;
+    border: 2px solid #E16120;
+    padding: 2vw;
+    margin: 2vw;
+}
+
+.descritpionBox h2{
+    color: #E16120;
+    font-weight: 900;
+    font-size: 2vw;
+    margin-bottom: 2vw;
+}
+
+.descritpionBox p{
+    font-size: 1.6vw;
+    font-weight: 100;
+    color: #555555;
+    line-height: 1.5;
+}
+
+/* Meal Title */
+
+.mealHeading{
+    margin-top: 7vw;
+     font-size: 2vw;
+    margin-left:2vw;
+    letter-spacing: 3px;
+    font-weight: 500;
+}
+
+.orangeLine{
+    height: 4px;
+    width: 6vw;
+    margin-top: 1.5vh;
+    margin-left: 2vw;
+    background-color: #E16120;
+    margin-bottom: 4vw;
+}
+
+/* Meal Cards */
+
+#allMeals{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    column-gap: 20px;
+    row-gap: 35px;
+    margin-left: 1.5vw;
+    margin-bottom: 15vh;
+}
+
+.cardsMeals{
+    height: 46vh;
+    width: 17vw;
+    background-color: white;
+    border-radius: 5px 5px 0 0;
+     border: 1px solid lightgray;
+    box-shadow: 0 0 5px lightgray; 
+}
+
+.cardsMeals img{
+    height: 35vh;
+    width: 17vw;
+    border-radius: 5px 5px 0 0;
+    margin-bottom: 1vh;
+}
+
+.cardTitle{
+    font-size: 1.3vw;
+    margin-left: 1.5vw;
+    font-weight: 600;
 }
