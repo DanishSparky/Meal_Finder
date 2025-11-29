@@ -30,6 +30,10 @@ header{
     font-size: 1.3vw;
 }
 
+.titleTag a{
+    text-decoration: none;
+}
+
 .navTitle{
     color: white;
     font-size: 2.1vw;
