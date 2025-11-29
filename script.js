@@ -51,7 +51,7 @@ function displayItems(meals) {
     });
 
     category.innerHTML = meal;
-    document.querySelectorAll(".measlCategories").forEach(card => {
+    document.querySelectorAll(".measlCategories").forEach((card) => {
         card.addEventListener("click", () =>{
             const categoryName = card.getAttribute("data-category");
             const description = card.getAttribute("data-description");
