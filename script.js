@@ -51,11 +51,11 @@ function displayItems(meals) {
     });
 
     category.innerHTML = meal;
-    document.querySelectorAll(".mealsCategories").forEach(card => {
+    document.querySelectorAll(".measlCategories").forEach(card => {
         card.addEventListener("click", () =>{
             const categoryName = card.getAttribute("data-category");
             const description = card.getAttribute("data-description");
-
+            
             // save category and description in localstorage
             localStorage.setItem("selectedCategory", categoryName);
             localStorage.setItem("selectedDescription", description);
