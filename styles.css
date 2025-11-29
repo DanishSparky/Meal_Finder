@@ -1,7 +1,6 @@
 *{
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     margin: 0;
-   
 }
 
 body{
@@ -194,6 +193,11 @@ header{
     text-align: center;
 }
 
+.measlCategories img:hover{
+ height: 31vh;
+    width: 19vw;
+}
+
 .measlCategories img{
     height: 33vh;
     width: 21vw;
@@ -209,7 +213,75 @@ header{
     right: 0.7vw;
 }
 
+/* Search */
 
+#searchTitle{
+    margin-bottom: 10vh;
+}
+
+#searchTitle h2{
+      font-size: 2vw;
+    margin-left:2vw;
+    letter-spacing: 3px;
+    font-weight: 500;
+
+}
+
+.belowLine{
+    height: 4px;
+    width: 6vw;
+    margin-top: 1.5vh;
+    margin-left: 2vw;
+    background-color: #E16120;
+}
+
+#searchedMeal{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    column-gap: 20px;
+    row-gap: 35px;
+    margin-bottom: 10vh;
+    margin-left: 1.5vw;
+}
+
+.mealProduct{
+       position: relative;
+    height: 47vh;
+    width: 17vw;
+    background-color: white;
+    border-radius: 8px 8px 0 0;
+     border: 1px solid lightgray;
+    box-shadow: 0 0 5px lightgray; 
+}
+
+.mealProduct img{
+    height: 35vh;
+    width: 17vw;
+    border-radius: 8px 8px 0 0;
+    margin-bottom: 1vh;
+}
+
+#mealCategory{
+     position: absolute;
+    background-color: white;
+    color:#E16120;
+    padding: 3px 10px;
+    border-radius: 10px;
+    top: 1.5vh;
+    right: 0.7vw;
+    font-weight: 600;
+}
+
+#origin{
+    font-size: 2vh;
+    margin-left: 1vw;
+    color: silver;
+}
+
+.dishName{
+    margin-left: 1vw;
+    margin-top: 1vh;
+}
 
 
 
