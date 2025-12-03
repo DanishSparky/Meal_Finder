@@ -213,8 +213,140 @@ header{
 
 /* Meal Details with image */
 
+#mealDetail{
+    background-color: white;
+    margin: 4vh;
+    box-shadow: 2px 2px 5px grey;
+}
 
+.mealParameters{
+    display: flex;
+    justify-content: space-evenly;
+    padding-top: 8vh;
+    margin-bottom: 10vh;
+}
 
+.mealParameters img{
+    height: 85vh;
+    width: 33vw;
+}
+
+.mealName{
+    color: #E16120;
+    font-size: 2.5vw;
+    margin-bottom: 2.5vh;
+}
+
+.mealInfo hr{
+    border: none;
+    height: 1.5px;
+    background-color: #E16120;
+    margin-bottom: 4vh;
+}
+
+.mealCategory{
+    font-size: 1.5vw;
+    font-weight: 600;
+    margin-bottom: 5vh;
+}
+
+.mealCategory span{
+    font-weight: 100;
+    word-spacing: 1px;
+}
+
+.mealSource{
+    font-size: 1.5vw;
+    font-weight: 600;
+    margin-bottom: 5vh;
+}
+
+.mealSource span{
+    font-weight: 100;
+    font-size: 1.3vw;
+}
+
+.mealTags{
+    font-size: 1.5vw;
+    font-weight: 600;
+    display: flex;
+    margin-bottom: 10vh;
+}
+
+.mealTags span{
+    font-size: 2vh;
+    color: #E16120;
+    border: 1px solid #E16120;
+    padding: 3px;
+    border-radius: 5px;
+    margin: 2px;
+}
+
+.mealIngridents{
+    background-color: #E16120;
+}
+
+.mealIngridents h5{
+    color: white;
+    font-size: 1.3vw;
+    padding: 3vh;
+
+}
+
+.allIngredients{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.allIngredients p{
+    color: white;
+    margin-left: 2vw;
+    margin-bottom: 3vh;
+}
+
+.allIngredients span{
+    color: white;
+    border: 1px solid white;
+    padding: 3px;
+    background-color: #3A9691;
+    font-size: 1.5vh;
+    border-radius: 25px;
+}
+
+.measures{
+    margin-left: 4vw;
+    margin-right: 4vw;
+}
+
+.measures h5{
+    font-size: 1.3vw;
+    margin-bottom: 3vh;
+}
+
+.allMeasures{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    background-color: #F5F5F5;
+    border: 1px solid gainsboro;
+    padding: 1.5vw;
+}
+
+.allMeasures p{
+    margin: 1vh;
+}
+
+.instrunctions{
+    margin-left: 4vw;
+    margin-bottom: 15vh;
+    padding-bottom: 7vh;
+}
+
+.instructionsTitle{
+    margin-top: 8vh;
+    margin-bottom: 4vh;
+    font-size: 1.4vw;
+    font-weight: 700;
+}
 
 
 
