@@ -11,6 +11,59 @@ async function fetchMealDetail(mealID) {
 fetchMealDetail(clicked_ID)
 
 function displaymealDetails(details){
+    const detail = document.getElementById("secondNav");
+    let anotherNav = "";
+
+    details.forEach((meal)=>{
+        anotherNav += `
+        <div class="anotherNav">
+            <a href="./index.html"><i class="fa-solid fa-house" id="icon"></i></a>
+            <i class="fa-solid fa-angles-right" id="arrow"></i>
+            <p id="mealName">${meal.strMeal}</p>
+        </div>
+        `
+    })
+    detail.innerHTML = anotherNav; 
+
+
+
+    const info = document.getElementById("mealDetail");
+    let mainDetail = "";
+
+    details.forEach((information)=>{
+
+         let ingredientsList = "";
+
+    for(let i = 1; i <= 20; i++){
+        const ingredient = information[`strIngredient${i}`];
+        if (ingredient && ingredient.trim() !== "") {
+            ingredientsList += `<p>${i} ${ingredient}</p>`;
+        }
+    }
+
+        mainDetail += `
+        <div class="imgdiv">
+            <img src="${information.strMealThumb}" alt="${information.strMeal}">
+        </div>
+        <div class="mealInfo">
+            <h2 class="mealName">${information.strMeal}</h2>
+            <hr class="belowHr">
+            <p class="mealCategory"> CATEGORY : ${information.strCategory}</p>
+            <p class="mealSource"> Source : ${information.strSource}</p>
+            <span class="mealTags"> Tags : ${information.strTags}</span>
+            <div class="mealIngridents">
+                <p class="ingredientsTitle">Ingredients</p>
+                <div class="allIngredients">
+                    ${ingredientsList}
+                </div>
+            </div>
+        </div>
+        `
+    })
+    info.innerHTML = mainDetail;
+
+    
+    
 
 }
 
