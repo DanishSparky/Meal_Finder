@@ -414,3 +414,211 @@ header{
     top: 1.5vh;
     right: 0.7vw;
 }
+
+
+
+@media (max-width: 1024px) {
+    .navTitle {
+        font-size: 3vw;
+    }
+    #navLogo {
+        font-size: 3vw;
+    }
+
+    .bannerImg {
+        height: 23rem;
+    }
+    .bannerInput {
+        width: 14rem;
+        height: 3rem;
+        top: 30vh;
+        left: 32vw;
+        font-size: 1vw;
+    }
+    .searchIcon {
+        top: 30vh;
+        left: 55vw;
+        width: 3rem;
+        height: 3rem;
+    }
+
+    .mealParameters img {
+        height: 60vh;
+        width: 40vw;
+    }
+    .mealName {
+        font-size: 3vw;
+    }
+    .mealCategory, .mealSource {
+        font-size: 2vw;
+    }
+
+    .allIngredients {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .allMeasures {
+        grid-template-columns: 1fr;
+    }
+    .row {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .navbar {
+        height: 4rem;
+    }
+    .navTitle {
+        font-size: 4vw;
+    }
+    #navLogo {
+        font-size: 4.5vw;
+    }
+
+    .bannerImg {
+        height: 20rem;
+    }
+    .bannerTitle {
+        font-size: 4vw;
+        left: 20vw;
+    }
+    .bannerP {
+        font-size: 2vw;
+        left: 35vw;
+    }
+
+    .bannerInput {
+        left: 28vw;
+        width: 13rem;
+        top: 28vh;
+    }
+    .searchIcon {
+        left: 52vw;
+    }
+
+    /* Meal details convert to column */
+    .mealParameters {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    .mealParameters img {
+        width: 70vw;
+        height: auto;
+    }
+    .mealName {
+        font-size: 5vw;
+    }
+    .mealCategory, .mealSource {
+        font-size: 3vw;
+    }
+    .mealTags span {
+        font-size: 1.6vh;
+    }
+
+    .allIngredients {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+
+    .measures h5 {
+        font-size: 3vw;
+    }
+
+    .instructionsTitle {
+        font-size: 3vw;
+    }
+
+    /* Category grid */
+    .row {
+        grid-template-columns: repeat(2, 1fr);
+        margin-left: 0;
+    }
+    .measlCategories {
+        width: 40vw;
+        height: auto;
+    }
+    .measlCategories img {
+        width: 35vw;
+        height: auto;
+    }
+}
+
+
+@media (max-width: 480px) {
+
+    .navbar {
+        height: 3.5rem;
+    }
+    .navTitle {
+        font-size: 6vw;
+    }
+    #navLogo {
+        font-size: 6.5vw;
+    }
+
+    .bannerImg {
+        height: 14rem;
+    }
+
+    .bannerInput {
+        width: 11rem;
+        height: 2.6rem;
+        left: 20vw;
+        font-size: 3vw;
+        padding-left: 4vw;
+    }
+    .searchIcon {
+        left: 48vw;
+        width: 2.6rem;
+        height: 2.6rem;
+    }
+    .bannerTitle {
+        font-size: 5.2vw;
+        left: 15vw;
+    }
+    .bannerP {
+        font-size: 3vw;
+        left: 30vw;
+    }
+
+    /* Meal detail image + info */
+    .mealParameters img {
+        width: 85vw;
+    }
+    .mealName {
+        font-size: 7vw;
+    }
+    .mealCategory, .mealSource {
+        font-size: 4vw;
+    }
+
+    .allIngredients p {
+        font-size: 3vw;
+    }
+
+    .allMeasures p {
+        font-size: 3.5vw;
+    }
+
+    .instructionsTitle {
+        font-size: 4vw;
+    }
+
+    /* Tags */
+    .singleTag {
+        font-size: 1.4vh;
+        padding: 5px 8px;
+    }
+
+    /* Category grid → 1 column */
+    .row {
+        grid-template-columns: 1fr;
+    }
+    .measlCategories {
+        width: 80vw;
+    }
+    .measlCategories img {
+        width: 75vw;
+    }
+}

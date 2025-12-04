@@ -295,6 +295,225 @@ header{
 
 
 
+@media (max-width: 1200px) {
+
+    .row {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    #searchedMeal {
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    .bannerInput {
+        left: 30vw;
+        width: 15rem;
+    }
+
+    .searchIcon {
+        left: 55vw;
+    }
+
+    .bannerTitle {
+        font-size: 3vw;
+        left: 20vw;
+    }
+
+    .bannerP {
+        left: 34vw;
+    }
+}
 
 
+@media (max-width: 992px) {
 
+    .navTitle {
+        font-size: 3vw;
+    }
+
+    #navLogo {
+        font-size: 2.5vw;
+    }
+
+    .row {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    #searchedMeal {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .bannerInput {
+        left: 28vw;
+        top: 34vh;
+        width: 14rem;
+    }
+
+    .searchIcon {
+        left: 55vw;
+        top: 34vh;
+    }
+
+    .bannerTitle {
+        font-size: 4vw;
+        top: 48vh;
+        left: 18vw;
+    }
+
+    .bannerP {
+        font-size: 2.2vw;
+        left: 33vw;
+    }
+}
+
+
+@media (max-width: 768px) {
+
+    .navbar {
+        height: 4rem;
+    }
+
+    #navLogo {
+        font-size: 4.5vw;
+        right: 4vw;
+    }
+
+    .navTitle {
+        font-size: 4vw;
+        margin-left: 5vw;
+    }
+
+    .titleTag i {
+        font-size: 3.5vw;
+        left: 3vw;
+    }
+
+    .bannerInput {
+        width: 13rem;
+        top: 31vh;
+        left: 25vw;
+    }
+
+    .searchIcon {
+        left: 53vw;
+        top: 31vh;
+        width: 3rem;
+        height: 3rem;
+    }
+
+    .bannerTitle {
+        font-size: 5vw;
+        left: 10vw;
+        top: 46vh;
+    }
+
+    .bannerP {
+        font-size: 2.8vw;
+        left: 26vw;
+    }
+
+    .row {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    #searchedMeal {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .measlCategories {
+        width: 40vw;
+    }
+}
+
+
+@media (max-width: 576px) {
+
+    #sidebar {
+        width: 250px;
+        right: -250px;
+    }
+
+    .navbar {
+        height: 3.8rem;
+    }
+
+    .navTitle {
+        font-size: 5vw;
+    }
+
+    #navLogo {
+        font-size: 5vw;
+    }
+
+    .bannerImg {
+        height: 22rem;
+    }
+
+    .bannerInput {
+        width: 11rem;
+        height: 2.8rem;
+        top: 28vh;
+        left: 20vw;
+    }
+
+    .searchIcon {
+        width: 2.8rem;
+        height: 2.8rem;
+        top: 28vh;
+        left: 50vw;
+    }
+
+    .bannerTitle {
+        font-size: 5.8vw;
+        top: 39vh;
+        left: 12vw;
+    }
+
+    .bannerP {
+        left: 28vw;
+        font-size: 3.2vw;
+    }
+
+    .row {
+        grid-template-columns: repeat(1, 1fr);
+        margin-left: 6vw;
+    }
+
+    #searchedMeal {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .mealProduct {
+        width: 80vw;
+    }
+}
+
+
+@media (max-width: 400px) {
+
+    .bannerInput {
+        width: 10rem;
+        left: 18vw;
+    }
+
+    .searchIcon {
+        left: 50vw;
+    }
+
+    .bannerTitle {
+        font-size: 6.5vw;
+        left: 10vw;
+    }
+
+    .bannerP {
+        left: 24vw;
+    }
+
+    .measlCategories {
+        width: 80vw;
+    }
+
+    .mealProduct {
+        width: 85vw;
+    }
+}

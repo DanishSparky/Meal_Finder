@@ -232,3 +232,280 @@ header{
     margin-left: 1.5vw;
     font-weight: 600;
 }
+
+@media (max-width: 1200px) {
+
+    /* Banner */
+    .bannerInput {
+        left: 32vw;
+        width: 15rem;
+    }
+
+    .searchIcon {
+        left: 55vw;
+    }
+
+    .bannerTitle {
+        left: 20vw;
+        font-size: 3vw;
+    }
+
+    .bannerP {
+        left: 34vw;
+        font-size: 1.8vw;
+    }
+
+    #allMeals {
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    .cardsMeals,
+    .cardsMeals img {
+        width: 20vw;
+    }
+}
+
+
+@media (max-width: 992px) {
+
+    .navTitle {
+        font-size: 3vw;
+    }
+
+    #navLogo {
+        font-size: 2.5vw;
+    }
+
+    /* Banner */
+    .bannerImg {
+        height: 25rem;
+    }
+
+    .bannerInput {
+        left: 28vw;
+        top: 30vh;
+        width: 14rem;
+    }
+
+    .searchIcon {
+        left: 52vw;
+        top: 30vh;
+    }
+
+    .bannerTitle {
+        top: 46vh;
+        left: 15vw;
+        font-size: 4vw;
+    }
+
+    .bannerP {
+        left: 32vw;
+        font-size: 2vw;
+    }
+
+    #allMeals {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .cardsMeals,
+    .cardsMeals img {
+        width: 26vw;
+    }
+
+    .cardTitle {
+        font-size: 1.8vw;
+    }
+}
+
+
+@media (max-width: 768px) {
+
+    .navbar {
+        height: 4rem;
+    }
+
+    .navTitle {
+        font-size: 4vw;
+    }
+
+    #navLogo {
+        font-size: 4vw;
+    }
+
+    .titleTag i {
+        font-size: 3vw;
+    }
+
+    /* Banner */
+    .bannerImg {
+        height: 22rem;
+    }
+
+    .bannerInput {
+        width: 12rem;
+        top: 28vh;
+        left: 24vw;
+    }
+
+    .searchIcon {
+        width: 3rem;
+        height: 3rem;
+        top: 28vh;
+        left: 50vw;
+    }
+
+    .bannerTitle {
+        font-size: 5vw;
+        left: 10vw;
+        top: 42vh;
+    }
+
+    .bannerP {
+        font-size: 2.5vw;
+        left: 26vw;
+    }
+
+    /* Cards */
+    #allMeals {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .cardsMeals {
+        width: 38vw;
+    }
+
+    .cardsMeals img {
+        width: 38vw;
+    }
+
+    .cardTitle {
+        font-size: 2.5vw;
+    }
+}
+
+
+@media (max-width: 576px) {
+
+    /* Sidebar */
+    #sidebar {
+        width: 250px;
+        right: -250px;
+    }
+
+    #close-btn {
+        font-size: 4vw;
+        right: 4vw;
+    }
+
+    /* Navbar */
+    .navbar {
+        height: 3.8rem;
+    }
+
+    .navTitle {
+        font-size: 5vw;
+    }
+
+    #navLogo {
+        font-size: 5vw;
+    }
+
+    /* Banner */
+    .bannerImg {
+        height: 20rem;
+    }
+
+    .bannerInput {
+        width: 10rem;
+        height: 2.6rem;
+        top: 30vh;
+        left: 20vw;
+    }
+
+    .searchIcon {
+        width: 2.6rem;
+        height: 2.6rem;
+        top: 30vh;
+        left: 50vw;
+    }
+
+    .bannerTitle {
+        font-size: 6vw;
+        top: 38vh;
+        left: 10vw;
+    }
+
+    .bannerP {
+        font-size: 3vw;
+        left: 25vw;
+    }
+
+    /* Title */
+    .mealHeading {
+        font-size: 5vw;
+    }
+
+    .orangeLine {
+        width: 20vw;
+    }
+
+    /* Cards */
+    #allMeals {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .cardsMeals {
+        width: 80vw;
+    }
+
+    .cardsMeals img {
+        width: 80vw;
+    }
+
+    .cardTitle {
+        font-size: 4vw;
+    }
+
+    .descritpionBox h2 {
+        font-size: 6vw;
+    }
+
+    .descritpionBox p {
+        font-size: 3.5vw;
+    }
+}
+
+
+@media (max-width: 400px) {
+
+    .bannerInput {
+        width: 9rem;
+        left: 18vw;
+    }
+
+    .searchIcon {
+        left: 48vw;
+    }
+
+    .bannerTitle {
+        font-size: 7vw;
+        left: 10vw;
+    }
+
+    .bannerP {
+        font-size: 3.5vw;
+        left: 22vw;
+    }
+
+    .cardsMeals {
+        width: 85vw;
+    }
+
+    .cardsMeals img {
+        width: 85vw;
+    }
+
+    .cardTitle {
+        font-size: 5vw;
+    }
+}
