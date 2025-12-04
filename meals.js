@@ -1,6 +1,62 @@
 const selectedCategory = localStorage.getItem("selectedCategory");
 const selectedDescription = localStorage.getItem("selectedDescription");
 
+const menuBtn = document.getElementById("navLogo");
+const closeBtn = document.getElementById("close-btn");
+const sidebar = document.getElementById("sidebar");
+
+let mealProducts = []
+let mealInNav = []
+
+menuBtn.addEventListener("click", () => {
+    sidebar.style.right = "0px";
+});
+
+closeBtn.addEventListener("click", () => {
+    sidebar.style.right = "-350px";
+});
+
+
+async function fetchItemsNav() {
+    const navRes = await fetch("https://www.themealdb.com/api/json/v1/1/categories.php");
+    const navData = await navRes.json();
+
+    navData.categories.forEach((obj) => {
+        mealInNav.push(obj);
+    });
+    displayItemsNav(mealInNav);
+}
+
+fetchItemsNav();
+
+
+function displayItemsNav(meals) {
+
+    const categoryNav = document.querySelector("#sidebar .items");
+    let mealNav = "";
+
+    meals.forEach((product) => {
+        mealNav += `
+            <p class="mealCategories" data-categoryNav="${product.strCategory}">
+                ${product.strCategory}
+            </p>
+            <hr>
+        `;
+    });
+
+    categoryNav.innerHTML = mealNav;
+
+    document.querySelectorAll(".mealCategories").forEach((category) => {
+        category.addEventListener("click", () => {
+
+            const categoryName = category.getAttribute("data-categoryNav");
+
+            localStorage.setItem("selectedCategory", categoryName);
+
+            window.location.href = "meals.html";
+        });
+    });
+}
 
 
 // Fetching the meals from the api throught the category and description from the localStorage
